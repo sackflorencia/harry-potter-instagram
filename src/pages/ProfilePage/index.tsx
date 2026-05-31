@@ -46,7 +46,7 @@ const ProfilePage = () => {
     return (
         <>
             <Sidebar />
-            <ProfileHeader profile={profile} />
+            <ProfileHeader profile={profile} isOwnProfile={isOwnProfile} />
             <PostGrid posts={posts} />
         </>
     )
