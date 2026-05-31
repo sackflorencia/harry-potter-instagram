@@ -39,15 +39,17 @@ const ProfilePage = () => {
 
         loadProfile();
     }, [realHouse]);
+    if (!profile) {
+        return <p>Loading...</p>;
+    }
 
-return (
-    <>
-        <Sidebar />
-        <ProfileHeader />
-        <PostGrid posts={posts} />
-        <h1>{realHouse}</h1>
-    </>
-)
+    return (
+        <>
+            <Sidebar />
+            <ProfileHeader profile={profile} />
+            <PostGrid posts={posts} />
+        </>
+    )
 }
 
 export default ProfilePage
