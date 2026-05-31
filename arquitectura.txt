@@ -1,0 +1,45 @@
+components
+│
+├── Avatar
+│
+├── FollowButton
+│
+├── Loading
+│
+├── ErrorMessage
+│
+├── ProfileStats
+│   └── StatItem
+│
+├── ProfileHeader
+│
+├── PostsGrid
+│   └── PostThumbnail
+│
+├── PostCard
+│
+├── CommentList
+│   └── CommentItem
+│
+├── SuggestionsList
+│   └── ProfilePreview
+│
+├── Sidebar
+│   ├── AppLogo
+│   └── NavigationItem
+│
+pages
+│
+├── FeedPage
+├── ProfilePage
+└── PostPage
+│
+interfaces
+│
+servicies
+│
+mappers
+│
+constants
+│
+router

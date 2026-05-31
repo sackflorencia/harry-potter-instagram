@@ -2,6 +2,9 @@ import { useEffect, useState } from "react";
 import type { Post } from "../../interfaces/Post";
 import { getCharacters } from "../../services/hpAPI";
 import { characterToPost } from "../../mappers/characterMapper";
+import PostsList from "../../components/PostsList";
+import Sidebar from "../../components/Sidebar";
+import SuggestionsList from "../../components/SuggestionsList";
 
 const FeedPage = () => {
     const [posts, setPosts] = useState<Post[]>([]); 
@@ -24,7 +27,9 @@ const FeedPage = () => {
   }, []);
     return (
         <>
-        <h1>FeedPage</h1>
+            <Sidebar/>
+            <PostsList posts={posts}/> 
+            <SuggestionsList/>
         </>
     )
 }
