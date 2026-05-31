@@ -4,6 +4,7 @@ import FeedPage from "../pages/FeedPage";
 import ProfilePage from "../pages/ProfilePage";
 import PostPage from "../pages/PostPage";
 
+//ChatGPT me explico como crear las routes del approter, yo adapte a las pages que tengo
 function AppRouter() {
   return (
     <Routes>
@@ -22,7 +23,7 @@ function AppRouter() {
       <Route
         path="*"
         element={<Navigate to="/" replace />}
-      />
+      /> //este es para redireccionar a la pagina principal si el usuario ingresa una ruta que no existe
     </Routes>
   );
 }
