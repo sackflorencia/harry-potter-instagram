@@ -14,7 +14,7 @@ import { FiSend } from "react-icons/fi";
 //https://react-icons.github.io/react-icons/icons/fa/
 //https://react-icons.github.io/react-icons/icons/fi/
 
-const PostActions = ({ postId }: { postId: string }) => {
+const PostActions = ({ postId, likes }: { postId: string, likes: number }) => {
     const [liked, setLiked] = useState(false);
     const [saved, setSaved] = useState(false);
 
@@ -54,6 +54,7 @@ const PostActions = ({ postId }: { postId: string }) => {
         <>
             <button onClick={toggleLike}>
                 {liked ? <FaHeart /> : <FaRegHeart />}
+                {likes + (liked ? 1 : 0)}
             </button>
 
             <button>

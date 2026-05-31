@@ -49,6 +49,8 @@ mappers
 constants
 │
 router
+│
+assets
 
 https://react-icons.github.io/react-icons/icons/fa/
 https://react-icons.github.io/react-icons/icons/fi/

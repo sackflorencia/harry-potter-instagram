@@ -15,7 +15,7 @@ const PostCard = ({ post, variant }: PostCardProps) =>{
         {variant === "detail" ? " - Post Page" : " - Feed Page"}
         <PostHeader username={post.username} />
         <PostImage image={post.image} />
-        <PostActions postId={post.id} />
+        <PostActions postId={post.id} likes={post.likes} />
         <PostDescription description={post.caption} username={post.username} />
         </>
     )
