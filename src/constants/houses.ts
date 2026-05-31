@@ -18,4 +18,4 @@ export const HOUSES = [
     id: "ravenclaw",
     name: "Ravenclaw",
   }
-];
+] as const;
