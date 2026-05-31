@@ -1,6 +1,6 @@
 export interface Post {
   id: string;
-  house: string;
+  username: string;
   image: string;
   caption: string;
   likes: number;

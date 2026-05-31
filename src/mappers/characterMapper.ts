@@ -8,7 +8,7 @@ export function characterToPost(
 ): Post {
   return {
     id: character.id,
-    house: character.house,
+    username: character.house,
     image: character.image,
     caption: `${character.name} representando a ${character.house}`,
     likes: Math.floor(Math.random() * 1000),

@@ -1,12 +1,22 @@
 import type { Post } from "../../interfaces/Post";
+import PostHeader from "./PostHeader";
+import PostImage from "./PostImage";
+import PostDescription from "./PostDescription";
+import PostActions from "./PostActions";
 
-//Este codigo fue todo hecho por mi. tuve un error en que los parametros no se usaban
-//y me marcaba en rojo, entonces temporalmente los puse en el return
-const PostCard = ({ post, isInPostPage }: { post: Post; isInPostPage: boolean }) =>{
+interface PostCardProps {
+  post: Post;
+  variant: "feed" | "detail";
+}
+
+const PostCard = ({ post, variant }: PostCardProps) =>{
     return (
         <>
-        {post.id}
-        {isInPostPage ? " - Post Page" : " - Feed Page"}
+        {variant === "detail" ? " - Post Page" : " - Feed Page"}
+        <PostHeader username={post.username} />
+        <PostImage image={post.image} />
+        <PostActions postId={post.id} />
+        <PostDescription description={post.caption} username={post.username} />
         </>
     )
 }
