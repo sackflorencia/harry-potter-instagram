@@ -1,9 +1,9 @@
 import { useParams } from "react-router-dom";
 const PostPage = () => {
-    const { id } = useParams();
+    const { postId } = useParams();
     return (
         <>
-        <h1>{id}</h1>
+            <h1>{postId}</h1>
         </>
     )
 }

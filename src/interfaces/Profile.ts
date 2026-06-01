@@ -1,4 +1,4 @@
-//Chatgpt
+//Chatgpt, yo le mande que queria y me armo el profile (las variables necesarias)
 export interface Profile {
   id: string;
   username: string;

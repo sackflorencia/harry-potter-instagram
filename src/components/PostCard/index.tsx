@@ -13,10 +13,10 @@ const PostCard = ({ post, variant }: PostCardProps) =>{
     return (
         <>
         {variant === "detail" ? " - Post Page" : " - Feed Page"}
-        <PostHeader username={post.username} />
+        <PostHeader username={post.username} profileId={post.profileId} />
         <PostImage image={post.image} />
         <PostActions postId={post.id} likes={post.likes} />
-        <PostDescription description={post.caption} username={post.username} />
+        <PostDescription description={post.caption} username={post.username} profileId={post.profileId} />
         </>
     )
 }

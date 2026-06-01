@@ -1,17 +1,13 @@
 components
 │
-├── Avatar
-│
-├── FollowButton
-│
 ├── Loading
 │
 ├── ErrorMessage
 │
-├── ProfileStats
-│   └── StatItem
-│
 ├── ProfileHeader
+│   └── FollowButton
+│   └── ProfileStats
+│       └── StatItem
 │
 ├── PostsGrid
 │   └── PostThumbnail

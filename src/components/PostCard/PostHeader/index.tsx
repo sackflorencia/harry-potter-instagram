@@ -1,7 +1,11 @@
-const PostHeader = ({username}: { username: string }) =>{
+import { Link } from "react-router-dom";
+
+const PostHeader = ({ username, profileId }: { username: string, profileId: string }) => {
     return (
         <>
-        <p>{username}</p>
+            <Link to={`/profile/${profileId}`}>
+                <p>{username}</p>
+            </Link>
         </>
     )
 }
