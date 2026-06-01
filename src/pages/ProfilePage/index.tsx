@@ -9,6 +9,7 @@ import { MY_HOUSE } from "../../constants/profile";
 import PostGrid from "../../components/PostsGrid";
 import ProfileHeader from "../../components/ProfileHeader";
 import Sidebar from "../../components/Sidebar";
+import Loading from "../../components/Loading";
 
 
 const ProfilePage = () => {
@@ -40,7 +41,7 @@ const ProfilePage = () => {
         loadProfile();
     }, [realHouse]);
     if (!profile) {
-        return <p>Loading...</p>;
+        return <Loading />;
     }
 
     return (

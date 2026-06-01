@@ -1,3 +1,4 @@
+import type { Comment } from "./Comment";
 export interface Post {
   id: string;
   profileId: string;
@@ -5,4 +6,6 @@ export interface Post {
   image: string;
   caption: string;
   likes: number;
+  comments: Comment[];
+  commentCount: number;
 }

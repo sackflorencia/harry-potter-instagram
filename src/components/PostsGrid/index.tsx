@@ -5,7 +5,7 @@ const PostGrid = ({ posts }: { posts: Post[] }) => {
     return (
         <>
             {posts.map(post => (
-                <PostThumbnail key={post.id} image={post.image} postId={post.id} />
+                <PostThumbnail key={post.id} post={post} />
             ))}
         </>
     )

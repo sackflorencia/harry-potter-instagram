@@ -1,9 +1,17 @@
-import { useParams } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import PostCard from "../../components/PostCard";
+import Sidebar from "../../components/Sidebar";
+
 const PostPage = () => {
-    const { postId } = useParams();
+    const location = useLocation();
+    const post = location.state?.post;
+    if (!post) {
+        return <p>Post not found</p>
+    }
     return (
         <>
-            <h1>{postId}</h1>
+            <Sidebar/>
+            <PostCard post={post} variant="detail" />
         </>
     )
 }
