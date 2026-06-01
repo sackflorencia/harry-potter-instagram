@@ -51,3 +51,4 @@ assets
 https://react-icons.github.io/react-icons/icons/fa/
 https://react-icons.github.io/react-icons/icons/fi/
 https://www.figma.com/design/LDqBsYMjYQibrB1dKqISH7/Instagram---Web-UI--Recreated---Community-?node-id=1-2&p=f&t=r5fc82hMGaFWdlLl-0
+https://hp-api.onrender.com/

@@ -3,6 +3,7 @@ import PostHeader from "./PostHeader";
 import PostImage from "./PostImage";
 import PostDescription from "./PostDescription";
 import PostActions from "./PostActions";
+import CommentsList from "./CommentsList";
 
 interface PostCardProps {
     post: Post;
@@ -16,7 +17,10 @@ const PostCard = ({ post, variant }: PostCardProps) => {
             <PostHeader username={post.username} profileId={post.profileId} />
             <PostImage image={post.image} />
             <PostActions postId={post.id} likes={post.likes} />
-            <PostDescription description={post.caption} username={post.username} profileId={post.profileId} />
+            <PostDescription post={post} variant={variant} />
+            {variant === "detail" && (
+                <CommentsList comments={post.comments} />
+            )}
         </>
     )
 }
