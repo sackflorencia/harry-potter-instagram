@@ -1,0 +1,15 @@
+/*HECHO CON IA*/
+
+.app-logo-container {
+  padding: 24px 12px;
+  display: flex;
+  align-items: center;
+}
+
+.app-logo-img {
+  width: 100%;       /* Se adapta al ancho del Sidebar */
+  max-width: 150px;  /* Tamaño máximo deseado para el logo */
+  height: auto;      /* ESTO ES LA CLAVE: mantiene la proporción y evita el estiramiento */
+  object-fit: contain; /* Asegura que la imagen no se deforme */
+  display: block;
+}

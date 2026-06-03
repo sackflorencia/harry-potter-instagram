@@ -1,0 +1,38 @@
+/*HECHO CON IA*/
+
+.feed-page-wrapper {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.feed-main-content {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 30px;
+  /* Espacio reservado para el Sidebar fijo */
+  margin-left: 244px; 
+}
+
+.feed-center-column {
+  width: 100%;
+  max-width: 470px;
+  margin-right: 64px;
+}
+
+.feed-right-column {
+  width: 100%;
+  max-width: 319px;
+}
+
+/* Ocultar sugerencias en pantallas pequeñas */
+@media (max-width: 1000px) {
+  .feed-right-column {
+    display: none;
+  }
+  .feed-center-column {
+    margin-right: 0;
+  }
+}

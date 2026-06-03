@@ -10,18 +10,20 @@ import { houseToProfile } from "../../mappers/houseMapper";
 import { HOUSES } from "../../constants/houses";
 import './FeedPage.css';
 
+
+/*Clases agregadas con IA*/
+
 const FeedPage = () => {
   const [posts, setPosts] = useState<Post[]>([]);
   const [profiles, setProfiles] = useState<Profile[]>([]);
+  
   useEffect(() => {
     async function loadPosts() {
       try {
         const characters = await getCharacters();
-
         const posts = characters
           .filter(character => character.house && character.image)
           .map(characterToPost);
-
         setPosts(posts);
       } catch (error) {
         console.error(error);
@@ -36,13 +38,20 @@ const FeedPage = () => {
 
     setProfiles(profiles);
   }, []);
-  return (
-    <>
+
+return (
+    <div className="feed-page-wrapper">
       <Sidebar />
-      <PostsList posts={posts} />
-      <SuggestionsList profiles={profiles} />
-    </>
+      <main className="feed-main-content">
+        <div className="feed-center-column">
+          <PostsList posts={posts} />
+        </div>
+        <aside className="feed-right-column">
+          <SuggestionsList profiles={profiles} />
+        </aside>
+      </main>
+    </div>
   )
 }
 
-export default FeedPage
+export default FeedPage;
