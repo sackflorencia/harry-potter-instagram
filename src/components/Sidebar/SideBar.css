@@ -1,0 +1,22 @@
+/*HECHO CON IA*/
+.sidebar-container {
+    position: fixed; /* Esto es lo que lo deja clavado a la izquierda */
+    top: 0;
+    left: 0;
+    width: 244px; /* Ancho estándar de Instagram */
+    height: 100vh;
+    background-color: #ffffff;
+    border-right: 1px solid #dbdbdb; /* El borde característico de IG */
+    display: flex;
+    flex-direction: column;
+    padding: 8px 12px;
+    box-sizing: border-box; /* Esto evita que el padding deforme el ancho */
+    z-index: 100; /* Asegura que siempre esté por encima del contenido */
+}
+
+.sidebar-nav-items {
+    margin-top: 32px; /* Espacio entre el logo y los items */
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
