@@ -1,17 +1,26 @@
 /*HECHO CON IA*/
 
 .post-description-wrapper {
-  margin-top: 8px;
+  margin-top: 4px;
   font-size: 14px;
+  line-height: 18px;
 }
 
-.post-caption-user {
+.post-description-user {
   font-weight: 600;
+  color: #000;
   text-decoration: none;
-  color: #000000;
-  margin-right: 6px;
+  margin-right: 5px;
 }
 
-.post-caption-text {
-  color: #000000;
+.post-description-caption {
+  margin: 0;
+  display: inline;
+}
+
+.post-description-comments-link {
+  color: #737373; /* Gris característico de IG */
+  text-decoration: none;
+  display: block;
+  margin-top: 4px;
 }

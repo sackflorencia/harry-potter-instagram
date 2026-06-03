@@ -1,19 +1,14 @@
-img{
-    width: 120px;
-    height: auto;
-}
-
 /*HECHO CON IA*/
 
-.post-image-wrapper {
+.post-image-container {
   width: 100%;
+  aspect-ratio: 1 / 1; /* Esto hace que la foto sea cuadrada */
+  overflow: hidden;
   background-color: #efefef;
-  margin-bottom: 4px;
 }
 
-.post-image-content {
+.post-image {
   width: 100%;
-  display: block;
-  aspect-ratio: 1 / 1; /* Para asegurar el formato cuadrado de Figma */
-  object-fit: cover;
+  height: 100%;
+  object-fit: cover; /* Esto evita que la foto se estire */
 }

@@ -1,13 +1,15 @@
 /* HECHO CON IA*/
+
+/* src/components/PostCard/PostCard.css */
 .post-card-container {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 470px; /* Ancho real de Instagram */
-  margin-bottom: 24px;
+  max-width: 470px; /* Ancho fijo igual al de Instagram */
+  margin: 0 auto 24px auto; /* Centrado y con margen abajo */
   padding-bottom: 24px;
   border-bottom: 1px solid #dbdbdb;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
 .post-card-container:last-child {

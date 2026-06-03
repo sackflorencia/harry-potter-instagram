@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "./PostHeader.css";
-
+import "../PostCard.css";
 const PostHeader = ({ username, profileId }: { username: string, profileId: string }) => {
     return (
         <header className="post-header-wrapper">

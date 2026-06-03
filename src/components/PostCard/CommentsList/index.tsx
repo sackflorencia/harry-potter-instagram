@@ -7,9 +7,9 @@ import "./CommentsList.css";
 const CommentsList = ({comments}: {comments: Comment[]}) => {
     return (
         <div className="comments-list-container">
-        {comments.map((comment) => (
-            <CommentItem key={comment.id} comment={comment} />
-        ))}
+            {comments.map((comment) => (
+                <CommentItem key={comment.id} comment={comment} />
+            ))}
         </div>
     )
 }
