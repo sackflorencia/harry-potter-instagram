@@ -1,6 +1,6 @@
 import type { Profile } from "../../interfaces/Profile"
 import ProfilePreview from "./ProfilePreview"
-import "./SuggestionsList.css"
+import "./SuggestionList.css"
 
 
 /*MODIFICADO CON IA*/
