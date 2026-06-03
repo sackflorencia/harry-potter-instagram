@@ -2,3 +2,18 @@ img{
     width: 120px;
     height: auto;
 }
+
+/*HECHO CON IA*/
+
+.post-image-wrapper {
+  width: 100%;
+  background-color: #efefef;
+  margin-bottom: 4px;
+}
+
+.post-image-content {
+  width: 100%;
+  display: block;
+  aspect-ratio: 1 / 1; /* Para asegurar el formato cuadrado de Figma */
+  object-fit: cover;
+}

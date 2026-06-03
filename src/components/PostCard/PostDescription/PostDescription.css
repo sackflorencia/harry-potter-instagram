@@ -1,0 +1,17 @@
+/*HECHO CON IA*/
+
+.post-description-wrapper {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.post-caption-user {
+  font-weight: 600;
+  text-decoration: none;
+  color: #000000;
+  margin-right: 6px;
+}
+
+.post-caption-text {
+  color: #000000;
+}
