@@ -8,6 +8,7 @@ import SuggestionsList from "../../components/SuggestionsList";
 import type { Profile } from "../../interfaces/Profile";
 import { houseToProfile } from "../../mappers/houseMapper";
 import { HOUSES } from "../../constants/houses";
+import './FeedPage.css';
 
 const FeedPage = () => {
   const [posts, setPosts] = useState<Post[]>([]);

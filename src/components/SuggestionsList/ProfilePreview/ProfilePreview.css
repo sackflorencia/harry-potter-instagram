@@ -1,0 +1,55 @@
+/*HECHO CON IA*/
+.profile-preview-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.profile-preview-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 12px;
+  color: inherit;
+}
+
+.profile-preview-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-preview-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-preview-username {
+  font-size: 14px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 2px;
+}
+
+.profile-preview-name {
+  font-size: 12px;
+  font-weight: 400;
+  color: #737373;
+  margin: 0;
+}
+
+.profile-preview-follow-btn {
+  background: none;
+  border: none;
+  color: #0095f6;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+}
+
+.profile-preview-follow-btn:hover {
+  color: #00376b;
+}

@@ -1,0 +1,31 @@
+/*HECHO CON IA*/
+.nav-item-link {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 4px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #000000;
+  transition: background-color 0.2s ease;
+}
+
+.nav-item-link:hover {
+  background-color: #f2f2f2;
+}
+
+.nav-item-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+  font-size: 24px;
+}
+
+.nav-item-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}

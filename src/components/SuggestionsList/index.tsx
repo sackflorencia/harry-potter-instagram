@@ -1,14 +1,22 @@
 import type { Profile } from "../../interfaces/Profile"
 import ProfilePreview from "./ProfilePreview"
+import "./SuggestionsList.css"
 
+
+/*MODIFICADO CON IA*/
 const SuggestionsList = ({profiles}: {profiles: Profile[]}) =>{
     return (
-        <>
-            <p>Suggestions for you</p>
-            {profiles.map(profile => (
-                <ProfilePreview key={profile.id} profile={profile} />
-            ))}
-        </>
+        <div className="suggestions-container">
+            <div className="suggestions-header">
+                <p className="suggestions-title">Suggestions for you</p>
+                <span className="suggestions-see-all">See All</span>
+            </div>
+            <div className="suggestions-items">
+                {profiles.map(profile => (
+                    <ProfilePreview key={profile.id} profile={profile} />
+                ))}
+            </div>
+        </div>
     )
 }
 export default SuggestionsList
