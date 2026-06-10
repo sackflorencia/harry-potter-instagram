@@ -1,0 +1,8 @@
+/*hecho con ia*/
+.post-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 4px; /* Este es el pequeño espacio uniforme entre columnas y filas */
+  width: 100%;
+  margin-top: 24px;
+}

@@ -1,0 +1,30 @@
+/* hecho con ia */
+.profile-page-wrapper {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.profile-main-content {
+  /* Restamos el ancho del Sidebar para centrar correctamente en el espacio restante */
+  margin-left: 244px; 
+  width: calc(100% - 244px); 
+  
+  /* Medida estándar oficial de Instagram para perfiles */
+  max-width: 935px; 
+  
+  /* Centrado horizontal y margen superior */
+  margin: 30px auto 0 auto; 
+  padding: 0 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-separator {
+  border: none;
+  border-top: 1px solid #dbdbdb;
+  margin: 44px 0 0 0; /* Espacio idéntico al Figma antes de la grilla */
+  width: 100%;
+}
