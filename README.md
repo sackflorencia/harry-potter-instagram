@@ -22,6 +22,15 @@ La aplicación utiliza la Harry Potter API para obtener información de los pers
 - Navegación entre perfiles y publicaciones
 - Persistencia local mediante Local Storage
 
+## Stack
+
+- React
+- TypeScript
+- React Router
+- Vite
+- Local Storage
+- HP API
+
 ## Organización del proyecto
 ```bash
 src
