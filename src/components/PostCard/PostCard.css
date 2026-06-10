@@ -1,17 +1,76 @@
 /* HECHO CON IA*/
 
-/* src/components/PostCard/PostCard.css */
-.post-card-container {
+.post-card-container.feed {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 470px; /* Ancho fijo igual al de Instagram */
-  margin: 0 auto 24px auto; /* Centrado y con margen abajo */
+  max-width: 470px;
+  margin: 0 auto 24px auto;
   padding-bottom: 24px;
   border-bottom: 1px solid #dbdbdb;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
-.post-card-container:last-child {
+.post-card-container.feed:last-child {
   border-bottom: none;
+}
+
+.post-card-container.detail {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 935px; /* Estándar oficial de la grilla de IG */
+  margin: 30px auto;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  background-color: #ffffff;
+  min-height: 450px;
+  max-height: 600px; /* Fundamental para activar el scroll interno a la derecha */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.post-detail-left {
+  flex: 1; /* Toma todo el espacio disponible descontando los 350px de la derecha */
+  background-color: #000000; /* IG usa fondo negro por si la imagen es vertical/apaisada */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 4px 0 0 4px;
+}
+
+.post-detail-left .post-image-container {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: auto;
+}
+
+.post-detail-left .post-image {
+  object-fit: contain; /* Muestra la foto completa sin recortar */
+}
+
+.post-detail-right {
+  width: 350px; /* Ancho fijo estricto */
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #dbdbdb;
+  flex-shrink: 0;
+  border-radius: 0 4px 4px 0;
+}
+
+.post-detail-header {
+  border-bottom: 1px solid #dbdbdb;
+  padding: 8px 16px;
+}
+
+.post-detail-scrollable {
+  flex: 1;
+  overflow-y: auto; /* Habilita el scroll vertical solo en esta zona */
+  padding: 16px;
+  scrollbar-width: thin; /* Estiliza la barra de scroll nativa */
+}
+
+.post-detail-footer {
+  border-top: 1px solid #dbdbdb;
+  padding: 8px 16px;
 }

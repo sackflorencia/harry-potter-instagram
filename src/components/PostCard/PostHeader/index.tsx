@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import "./PostHeader.css";
-import "../PostCard.css";
 const PostHeader = ({ username, profileId, avatar }: { username: string, profileId: string, avatar: string }) => {
     return (
         <header className="post-header-wrapper">
@@ -10,7 +9,7 @@ const PostHeader = ({ username, profileId, avatar }: { username: string, profile
                     <img
                         src={avatar}
                         alt={username}
-                        className="post-header-avatar"
+                        className="post-header-avatar-img"
                     />
                 </div>
                 <p className="post-header-username">{username}</p>

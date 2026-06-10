@@ -1,7 +1,6 @@
 /*HECHO CON IA*/
 .comments-list-container {
-    display: flex;
-    flex-direction: column;
-    gap: 8px; /* Espacio entre cada comentario */
-    padding: 4px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* Separación vertical entre cada comentario */
 }

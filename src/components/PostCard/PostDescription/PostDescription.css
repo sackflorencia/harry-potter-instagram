@@ -1,25 +1,25 @@
 /*HECHO CON IA*/
-
 .post-description-wrapper {
-  margin-top: 4px;
   font-size: 14px;
   line-height: 18px;
+  margin-bottom: 16px; /* Separación entre el caption y el primer comentario */
 }
 
 .post-description-user {
   font-weight: 600;
-  color: #000;
+  color: #000000;
   text-decoration: none;
   margin-right: 5px;
 }
 
 .post-description-caption {
-  margin: 0;
   display: inline;
+  margin: 0;
+  color: #000000;
 }
 
 .post-description-comments-link {
-  color: #737373; /* Gris característico de IG */
+  color: #737373;
   text-decoration: none;
   display: block;
   margin-top: 4px;
