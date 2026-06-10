@@ -16,7 +16,7 @@ import './FeedPage.css';
 const FeedPage = () => {
   const [posts, setPosts] = useState<Post[]>([]);
   const [profiles, setProfiles] = useState<Profile[]>([]);
-  
+
   useEffect(() => {
     async function loadPosts() {
       try {
@@ -39,7 +39,7 @@ const FeedPage = () => {
     setProfiles(profiles);
   }, []);
 
-return (
+  return (
     <div className="feed-page-wrapper">
       <Sidebar />
       <main className="feed-main-content">
