@@ -8,4 +8,5 @@ export interface Post {
   likes: number;
   comments: Comment[];
   commentCount: number;
+  avatar : string;
 }

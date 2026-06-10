@@ -6,32 +6,24 @@ import PostDescription from "./PostDescription";
 import CommentsList from "./CommentsList";
 import "./PostCard.css";
 
+interface PostCardProps {
+    post: Post;
+    variant: "feed" | "detail";
+}
 
 /* MODIFICADO CON IA */
-const PostCard = ({ post }: { post: Post }) => {
+
+const PostCard = ({ post, variant }: PostCardProps) => {
     return (
         <article className="post-card-container">
-            {/* Aquí traducimos tu interfaz Post a lo que tus hijos esperan */}
-            <PostHeader 
-                username={post.username} 
-                profileId={post.profileId} 
-            />
-            
+            <PostHeader username={post.username} profileId={post.profileId} avatar={post.avatar} />
             <PostImage image={post.image} />
-            
-            <PostActions 
-                postId={post.id} 
-                likes={post.likes} 
-            />
-            
-            <PostDescription 
-                post={post} 
-                variant="feed" 
-            />
-            
-            {/* Si CommentsList espera un array, se lo pasamos directo */}
-            <CommentsList comments={post.comments} />
-        </article>
-    );
-};
+            <PostActions postId={post.id} likes={post.likes} />
+            <PostDescription post={post} variant={variant} />
+            {variant === "detail" && (
+                <CommentsList comments={post.comments} />
+            )}
+            </article>
+    )
+}
 export default PostCard;
