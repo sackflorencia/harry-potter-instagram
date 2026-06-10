@@ -24,20 +24,27 @@
 .profile-preview-info {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* Clave: empuja ambos textos estrictamente contra la izquierda */
+  text-align: left; /* Evita que hereden un text-align: center global */
 }
 
 .profile-preview-username {
+  display: block; /* Fuerzo a que el <strong> se comporte como bloque */
   font-size: 14px;
   font-weight: 600;
   color: #000000;
-  margin-bottom: 2px;
+  margin: 0; /* Anula el margin-bottom de 2px que tenías */
+  line-height: 18px; /* Achica el espacio invisible arriba y abajo de la letra */
 }
 
 .profile-preview-name {
+  display: block;
   font-size: 12px;
   font-weight: 400;
   color: #737373;
   margin: 0;
+  line-height: 16px; /* Achica el espacio invisible del nombre */
 }
 
 .profile-preview-follow-btn {
