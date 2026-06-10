@@ -2,7 +2,8 @@
 .post-description-wrapper {
   font-size: 14px;
   line-height: 18px;
-  margin-bottom: 16px; /* Separación entre el caption y el primer comentario */
+  margin-bottom: 16px; 
+  text-align: left; /* <-- Clave para alinear la descripción */
 }
 
 .post-description-user {
@@ -23,4 +24,5 @@
   text-decoration: none;
   display: block;
   margin-top: 4px;
+  text-align: left; /* <-- Clave para el enlace de comentarios */
 }

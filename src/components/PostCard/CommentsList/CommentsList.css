@@ -2,5 +2,6 @@
 .comments-list-container {
   display: flex;
   flex-direction: column;
-  gap: 16px; /* Separación vertical entre cada comentario */
+  gap: 16px; 
+  text-align: left; 
 }

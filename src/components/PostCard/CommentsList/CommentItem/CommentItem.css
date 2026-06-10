@@ -3,6 +3,7 @@
   font-size: 14px;
   line-height: 18px;
   display: block;
+  text-align: left; /* <-- Clave: Evita que el texto largo se centre */
 }
 
 .comment-item-user {
@@ -15,5 +16,4 @@
 .comment-item-text {
   color: #000000;
   word-wrap: break-word; 
-
 }

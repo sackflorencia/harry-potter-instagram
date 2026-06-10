@@ -1,21 +1,21 @@
 /*HECHO CON IA*/
-
 .post-actions-container {
   display: flex;
   flex-direction: column;
-  padding: 4px 0 0 0; /* Ajustamos padding superior */
+  padding: 4px 0 0 0;
+  text-align: left;
 }
 
 .post-actions-buttons {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 0; /* Eliminamos margen excesivo */
+  margin-bottom: 0;
 }
 
 .post-actions-left {
   display: flex;
-  gap: 16px; /* Espacio entre los iconos */
+  gap: 16px;
 }
 
 .post-action-btn {
@@ -26,14 +26,15 @@
   font-size: 24px;
   display: flex;
   align-items: center;
-  color: #000;
+  color: #000000;
 }
 
 .post-likes-count {
   font-size: 14px;
-  font-weight: 600; /* Aseguramos que sea negrita */
-  color: #000;
-  margin-top: 4px; /* Un poco de aire entre botones y el número */
+  font-weight: 600;
+  color: #000000;
+  margin-top: 4px;
   margin-bottom: 4px;
+  text-align: left;
+  display: block;
 }
-

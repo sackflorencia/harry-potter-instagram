@@ -2,13 +2,17 @@
 
 .post-image-container {
   width: 100%;
-  aspect-ratio: 1 / 1; /* Esto hace que la foto sea cuadrada */
-  overflow: hidden;
-  background-color: #efefef;
+  aspect-ratio: 1 / 1; /* Fuerza el cuadrado perfecto */
+  overflow: hidden; /* Oculta lo que sobra de la foto */
+  background-color: #ffffff; /* Gris de carga por defecto */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .post-image {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Esto evita que la foto se estire */
+  object-fit: cover; 
+  display: block;
 }
