@@ -10,24 +10,17 @@ const FollowButton = ({ profileId,
         useState(false);
 
     useEffect(() => {
-
         const savedValue =
             localStorage.getItem(
                 `following-${profileId}`
             );
 
-        if (savedValue === "true") {
-            setIsFollowing(true);
-        }
-
+        setIsFollowing(savedValue === "true");
     }, [profileId]);
 
     const handleClick = () => {
-
         const newValue = !isFollowing;
-
         setIsFollowing(newValue);
-
         localStorage.setItem(
             `following-${profileId}`,
             String(newValue)
@@ -35,8 +28,8 @@ const FollowButton = ({ profileId,
     };
 
     return (
-        <button 
-            className={`profile-follow-btn ${isFollowing ? "following" : "not-following"}`} 
+        <button
+            className={`profile-follow-btn ${isFollowing ? "following" : "not-following"}`}
             onClick={handleClick}
         >
             {isFollowing ? "Following" : "Follow"}

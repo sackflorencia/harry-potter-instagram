@@ -18,7 +18,6 @@ import "./PostActions.css";
 const PostActions = ({ postId, likes }: { postId: string, likes: number }) => {
     const [liked, setLiked] = useState(false);
     const [saved, setSaved] = useState(false);
-
     useEffect(() => {
         setLiked(
             localStorage.getItem(`liked-${postId}`) === "true"
@@ -28,7 +27,6 @@ const PostActions = ({ postId, likes }: { postId: string, likes: number }) => {
             localStorage.getItem(`saved-${postId}`) === "true"
         );
     }, [postId]);
-
     const toggleLike = () => {
         const newValue = !liked;
         setLiked(newValue);
@@ -37,7 +35,6 @@ const PostActions = ({ postId, likes }: { postId: string, likes: number }) => {
             String(newValue)
         );
     };
-
     const toggleSave = () => {
         const newValue = !saved;
         setSaved(newValue);
@@ -46,7 +43,6 @@ const PostActions = ({ postId, likes }: { postId: string, likes: number }) => {
             String(newValue)
         );
     };
-
     return (
         <div className="post-actions-container">
             <div className="post-actions-buttons">

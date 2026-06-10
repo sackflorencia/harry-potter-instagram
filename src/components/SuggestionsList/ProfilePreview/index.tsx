@@ -1,15 +1,25 @@
 import { Link } from "react-router-dom"
 import type { Profile } from "../../../interfaces/Profile"
 import "./ProfilePreview.css"
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 
 /*MODIFICADO CON IA*/
 const ProfilePreview = ({ profile }: { profile: Profile }) => {
-    const [following, setFollowing] = useState(false);
-    const toggleFollow = () => {
-        const newValue = !following;
-        setFollowing(newValue);
+    const [isFollowing, setIsFollowing] =
+            useState(false);
+    
+        useEffect(() => {
+            const savedValue =
+                localStorage.getItem(
+                    `following-${profile.id}`
+                );
+    
+            setIsFollowing(savedValue === "true");
+        }, [profile.id]);
+        const handleClick = () => {
+        const newValue = !isFollowing;
+        setIsFollowing(newValue);
         localStorage.setItem(
             `following-${profile.id}`,
             String(newValue)
@@ -24,7 +34,9 @@ const ProfilePreview = ({ profile }: { profile: Profile }) => {
                     <p className="profile-preview-name">{profile.name}</p>
                 </div>
             </Link>
-            <button className="profile-preview-follow-btn" onClick={toggleFollow}>{following ? "Following" : "Follow"}</button>
+            <button className="profile-preview-follow-btn" onClick={handleClick}>
+                {isFollowing ? "Following" : "Follow"}
+            </button>
         </div>
     )
 }
