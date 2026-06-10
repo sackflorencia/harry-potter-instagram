@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import "./FollowButton.css";
 
 const FollowButton = ({ profileId,
 }: {
@@ -34,10 +35,11 @@ const FollowButton = ({ profileId,
     };
 
     return (
-        <button onClick={handleClick}>
-            {isFollowing
-                ? "Following"
-                : "Follow"}
+        <button 
+            className={`profile-follow-btn ${isFollowing ? "following" : "not-following"}`} 
+            onClick={handleClick}
+        >
+            {isFollowing ? "Following" : "Follow"}
         </button>
     );
 };

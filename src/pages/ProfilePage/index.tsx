@@ -10,6 +10,7 @@ import PostGrid from "../../components/PostsGrid";
 import ProfileHeader from "../../components/ProfileHeader";
 import Sidebar from "../../components/Sidebar";
 import Loading from "../../components/Loading";
+import './ProfilePage.css'
 
 
 const ProfilePage = () => {
@@ -45,11 +46,14 @@ const ProfilePage = () => {
     }
 
     return (
-        <>
+        <div className="profile-page-wrapper">
             <Sidebar />
-            <ProfileHeader profile={profile} isOwnProfile={isOwnProfile} />
-            <PostGrid posts={posts} />
-        </>
+            <main className="profile-main-content">
+                <ProfileHeader profile={profile} isOwnProfile={isOwnProfile} />
+                <hr className="profile-separator" />
+                <PostGrid posts={posts} />
+            </main>
+        </div>
     )
 }
 

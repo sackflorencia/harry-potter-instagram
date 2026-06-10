@@ -1,0 +1,9 @@
+/* HECHO CON IA*/
+
+.profile-stats-list {
+  display: flex;
+  gap: 40px; /* Margen horizontal exacto entre stats */
+  margin: 0; /* Elimina márgenes ocultos */
+  padding: 0; /* Elimina la sangría a la izquierda de la lista */
+  list-style: none; /* Oculta las viñetas */
+}

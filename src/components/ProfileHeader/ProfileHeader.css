@@ -1,0 +1,74 @@
+/* creado por ia */
+.profile-header-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  margin-bottom: 44px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.profile-header-avatar-column {
+  flex-basis: 290px;
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-right: 30px;
+}
+
+.profile-header-avatar-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #dbdbdb;
+}
+
+.profile-header-info-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.profile-header-top-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px; /* Separación con las estadísticas */
+}
+
+.profile-header-username {
+  font-size: 20px;
+  font-weight: 400;
+  color: #000000;
+  margin: 0; /* Clave para alinear a la izquierda */
+}
+
+.profile-edit-btn {
+  background-color: #efefef;
+  color: #000000;
+  border: none;
+  border-radius: 8px;
+  padding: 7px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.profile-header-stats-row {
+  margin-bottom: 20px; /* Separación con la biografía */
+}
+
+.profile-header-bio-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-header-bio-text {
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  margin: 0; /* Clave para alinear a la izquierda */
+  white-space: pre-line;
+  text-align: left;
+}

@@ -1,12 +1,13 @@
 import StatItem from "./StatItem";
+import './ProfileStats.css'
 
-const ProfileStats = ({followers, following, posts}: { followers: number; following: number; posts: number }) => {
+const ProfileStats = ({ followers, following, posts }: { followers: number; following: number; posts: number }) => {
     return (
-        <>
-            <StatItem label="Followers" value={followers} />
-            <StatItem label="Following" value={following} />
-            <StatItem label="Posts" value={posts} />
-        </>
+        <ul className="profile-stats-list">
+            <StatItem label=" posts" value={posts} />
+            <StatItem label=" followers" value={followers} />
+            <StatItem label=" following" value={following} />
+        </ul>
     )
 }
 export default ProfileStats;
