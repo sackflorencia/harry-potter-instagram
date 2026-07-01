@@ -23,7 +23,7 @@ function AppRouter() {
       <Route
         path="*"
         element={<Navigate to="/" replace />}
-      /> //este es para redireccionar a la pagina principal si el usuario ingresa una ruta que no existe
+      /> { /* este es para redireccionar a la pagina principal si el usuario ingresa una ruta que no existe */ } 
     </Routes>
   );
 }
